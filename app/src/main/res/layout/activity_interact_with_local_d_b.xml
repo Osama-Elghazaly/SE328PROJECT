@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FBE7"
+    android:orientation="vertical"
+    android:scrollbarSize="18sp">
+
+    <ImageView
+        android:id="@+id/imageViewLocalDB"
+        android:layout_width="86dp"
+        android:layout_height="66dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local DB Interface"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="18sp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbarSize="18sp">
+
+            <EditText
+                android:id="@+id/employeeID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID.."
+                android:scrollbarSize="18sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbarSize="18sp">
+
+            <EditText
+                android:id="@+id/employeeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name.."
+                android:scrollbarSize="18sp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbarSize="18sp">
+
+            <EditText
+                android:id="@+id/employeeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email.."
+                android:inputType="text"
+                android:scrollbarSize="18sp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbarSize="18sp">
+
+            <EditText
+                android:id="@+id/employeePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password.."
+                android:inputType="text"
+                android:scrollbarSize="18sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bttnView"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View"
+            android:textColor="#FBC02D" />
+
+        <Button
+            android:id="@+id/bttnAdd"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/bttnUpdate"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textColor="#2196F3" />
+
+        <Button
+            android:id="@+id/bttnDelete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="DELETE"
+            android:textColor="#4CAF50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:scrollbarSize="18sp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="18sp"
+                    android:text="Enter  ID: "
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/employeeKey2Update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:scrollbarSize="18sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:scrollbarSize="18sp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="18sp"
+                    android:text="Enter new email :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/updatedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:scrollbarSize="18sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/bttnSubmitUpdatedQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="@color/white"></Button>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bttnViewDataOnList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All data on new page"
+        app:backgroundTint="#D32F2F" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"></View>
+
+    <Button
+        android:id="@+id/bttnToFetchFB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Activity"
+        android:visibility="visible"
+        app:backgroundTint="#0288D1" />
+
+</LinearLayout>

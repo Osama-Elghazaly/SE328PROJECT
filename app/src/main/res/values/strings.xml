@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SE 328 Project</string>
+
+    <string-array name="cities">
+        <item>Riyadh</item>
+        <item>Jeddah</item>
+        <item>Cairo</item>
+        <item>Paris</item>
+        <item>Brasilia</item>
+        <item>Beijing</item>
+        <item>Liverpool</item>
+    </string-array>
+</resources>

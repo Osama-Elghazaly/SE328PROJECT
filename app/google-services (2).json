@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943795372483",
+    "project_id": "temp-cb9d7",
+    "storage_bucket": "temp-cb9d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943795372483:android:88abdb657b471fc3bd3d76",
+        "android_client_info": {
+          "package_name": "com.example.firebasetemptest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943795372483-gatb12hqkugfaedqru6ciodidd9jff7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL3BpkTJPuNSN9ByIzYSPdDoqnWqayJrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943795372483-gatb12hqkugfaedqru6ciodidd9jff7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
